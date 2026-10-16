@@ -122,6 +122,28 @@ pnpm test:live         # 3 个,真实 LLM 调用,会花额度,按需跑
 - `download_assets` 只做"重新渲染导出"，不支持拉原始上传图片的字节。
 - `use_figma` 的解释器需要外部 LLM；只有读工具是完全自足、无外部依赖的。
 
+## 许可证
+
+**GPL-3.0** —— 见 [`LICENSE`](LICENSE)。
+
+```
+figma-ce — 在自托管 Penpot 上复刻 Figma MCP 工具形状的适配器
+Copyright (C) 2026 xingguangcuican6666
+
+本程序是自由软件：你可以依据自由软件基金会发布的 GNU 通用公共许可证
+（第 3 版或你选择的任何更高版本）的条款重新分发和/或修改它。
+
+本程序分发的目的是希望它有用，但**不提供任何担保**，
+甚至不提供适销性或特定用途适用性的默示担保。
+详见 GNU 通用公共许可证。
+
+你应该已经随本程序收到一份 GNU 通用公共许可证的副本。
+如果没有，见 <https://www.gnu.org/licenses/>。
+```
+
+第三方部分的来源与各自的许可证见 [`NOTICE.md`](NOTICE.md) —— 其中
+`infra/penpot/docker-compose.yaml` 源自 Penpot 官方模板，沿用其 **AGPL-3.0**。
+
 ## 安全
 
 - 凭证一律不进 git：`infra/penpot/.env`、`infra/penpot/secrets/*.env`、`adapter/.env`、审计日志。仓库里的 `*.env.example` 全是空占位符。
